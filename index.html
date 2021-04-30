@@ -146,20 +146,28 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <form>
+            <div class="alert alert-info my-alert d-none" role="alert">
+              Pesan anda sudah saya terima. Klik link dibawah ini untuk meminta bantuan dari saya. <a href="https://www.instagram.com/naufalnauly/" class="alert-link">Klik untuk bantuan</a>.
+            </div>
+            <form name="contact-from-portfolio">
               <div class="mb-3">
                 <label for="name" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" />
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" />
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3"></textarea>
+                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Kirim</button>
+              <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+
+              <div class="d-flex align-items-center btn-tulisan d-none">
+                <strong>Loading...</strong>
+                <div class="spinner-border ms-auto btn-loading d-none" role="status" aria-hidden="true"></div>
+              </div>
             </form>
           </div>
         </div>
@@ -176,10 +184,33 @@
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center pb-5">
-      <p>Created with love from <a href="https://www.instagram.com/naufalnauly/" class="text-white fw-bold">M Aqil Naufal</a></p>
+      <p>© 2021 Muhamad Aqil Naufal. All rights reserved. <a href="https://www.instagram.com/naufalnauly/" class="text-white fw-bold">M Aqil Naufal</a></p>
     </footer>
     <!-- Akhir Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbwoQ13lXtAkfn4HR9VHSXHCavAamzF3GEZFnmUYEx3OfO_M-wg6exJbAXF0CikmlOLi/exec";
+      const form = document.forms["contact-from-portfolio"];
+      const btnTulisan = document.querySelector(".btn-tulisan");
+      const btnLoading = document.querySelector(".btn-loading");
+      const btnKirim = document.querySelector(".btn-kirim");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        btnTulisan.classList.toggle("d-none");
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL,  method: "POST", body: new FormData(form) )
+          .then((response) => {
+            btnTulisan.classList.toggle("d-none");
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            console.log("Success!", response)})
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
