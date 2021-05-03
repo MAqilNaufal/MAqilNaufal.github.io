@@ -1,5 +1,5 @@
 git add .
-git commit - m '(deskripsi)'
+git commit -m '(deskripsi)'
 git push
 
 3 langkah buat update repository di github
