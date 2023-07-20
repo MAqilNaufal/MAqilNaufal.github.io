@@ -1,0 +1,232 @@
+/* CSS for dark mode */
+body {
+  background-color: #ffffff; /* Set default background color */
+  color: #000000; /* Set default text color */
+}
+
+body.dark-mode {
+  background-color: #1f1f1f; /* Set dark mode background color */
+  color: #ffffff; /* Set dark mode text color */
+}
+
+/* Additional dark mode styling for specific elements */
+.dark-mode .navbar {
+  background-color: #1f1f1f;
+}
+
+.dark-mode .navbar .nav-link {
+  color: #ffffff;
+}
+
+.dark-mode .project-wrapper .card {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+.dark-mode .project-wrapper .card-title {
+  color: #ffffff;
+}
+
+.dark-mode .project-wrapper .card-text {
+  color: #f8f9fa;
+}
+
+.dark-mode .project-wrapper .btn-primary {
+  background-color: #ff0000;
+  border-color: #ff0000;
+}
+
+.dark-mode .project-wrapper .btn-primary:hover {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+/* CSS for dark mode switch */
+.dark-mode-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.dark-mode-switch .dark-mode-toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.dark-mode-switch .dark-mode-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #6b6b6b;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dark-mode-switch .dark-mode-label:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.dark-mode-switch .dark-mode-toggle:checked + .dark-mode-label {
+  background-color: #343a40;
+}
+
+.dark-mode-switch .dark-mode-toggle:checked + .dark-mode-label:before {
+  transform: translateX(16px);
+}
+
+/* CSS for navbar */
+.navbar .nav-link {
+  color: #ff0000; /* Replace with your desired text color */
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:focus {
+  color: #ffffff; /* Replace with your desired active tab text color */
+}
+
+/* CSS for top space */
+.top-space {
+  height: 70px; /* Adjust the height as per your navbar height */
+}
+
+/* Hero About */
+#hero-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#hero-about .col-lg-6 p {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+/* Contact */
+#contact {
+  position: relative;
+  min-height: 100vh;
+}
+
+#contact:before {
+  content: "";
+  background-image: url(img/rock.jpg);
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 25%;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+  transition: opacity 0.5s ease;
+}
+
+#contact.show-image:before {
+  opacity: 1;
+  max-height: calc(100vh - 10rem); /* Adjust the value as needed */
+}
+
+/* Footer */
+.footer {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.logo-footer {
+  margin-bottom: 10px; /* Add bottom margin */
+}
+
+.social-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-footer a {
+  display: flex;
+  align-items: center;
+  color: #1f1f1f;
+  text-decoration: none;
+  margin-bottom: 10px; /* Add bottom margin */
+}
+
+.social-footer a .icon {
+  margin-right: 10px;
+}
+
+.copy-text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Dark mode styling */
+.dark-mode .footer {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+.dark-mode .social-footer a {
+  color: #ffffff;
+}
+
+.dark-mode .copy-text {
+  color: #ffffff;
+}
+
+/* CSS for screen sizes between 992px and 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #hero-about .col-lg-6 p {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+/* CSS for screen sizes between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  #hero-about .col-lg-6 p {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+}
+
+/* CSS to adjust the navbar position on smaller screens */
+@media (max-width: 767px) {
+  #navbar {
+    position: fixed;
+    bottom: 0;
+    top: auto;
+  }
+
+  .top-space {
+    display: none;
+  }
+
+  #hero-about .col-lg-6 p {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .footer {
+    margin-bottom: 40px; /* Increase bottom margin for mobile */
+  }
+}
