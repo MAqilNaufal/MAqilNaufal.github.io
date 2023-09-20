@@ -1,0 +1,72 @@
+.gallery{
+    text-align: center;
+    background-image:
+    url(../images/merger.jpg);
+    
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: 100% 100%;
+}
+
+
+.gallery{
+    padding-top: 10%;
+    padding-bottom: 7%;
+}
+.gallery .judul h2 {
+    color: #d4731d;
+    padding: 50px 0;
+}
+
+.judul {
+    text-align: center;
+}
+  
+.judul h2 {
+    font-size: 45px;
+    color: #0b0503;
+    line-height: 50px;
+    font-weight: bold;
+    padding: 0;
+}
+
+.gallery img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    padding: 5%;
+}
+.gallery img:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+figure{
+    border: 1px #cccccc solid;
+    padding: 4px;
+}
+
+@media (max-width: 575px) {
+    .gallery img {
+        max-width: 60%; 
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .gallery{
+        text-align: center;
+        background-image:
+        url(../images/merge_small.jpg);
+        
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+        background-size: 100% 100%;
+    }
+    
+}

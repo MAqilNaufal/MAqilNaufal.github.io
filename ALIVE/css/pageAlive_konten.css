@@ -1,0 +1,484 @@
+.perkenalan1 {
+  background: url(../images/Alive8.0_7.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  padding-top: 200px;
+  padding-bottom: 90px;
+  max-width: 100%;
+  height: auto;
+}
+
+.perkenalan2 {
+  background-image: url(../images/Alive8.0_4.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  padding: 90px 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.perkenalan2 .titlepage {
+  text-align: right;
+  padding: 12px;
+  background-color: hsla(221, 56%, 51%, 0.5);
+  border-radius: 25px;
+  padding: 20px 20px 0px 20px;
+}
+
+.perkenalan1 .titlepage {
+  text-align: left;
+  padding: 12px;
+  background-color: rgba(195, 139, 248, 0.5);
+  border-radius: 25px;
+  padding: 20px 20px 0px 20px;
+}
+
+.isiAcara {
+  background: url(../images/Alive8.0_5.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  padding: 90px 0;
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 8%;
+}
+
+.isiAcara h3 {
+  text-align: center;
+  color: #ccc;
+  font-weight: 400;
+  text-shadow: 0px 0px 5px #dc3545;
+}
+
+.isiAcara h1 {
+  font-family: "Expletus Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 57px;
+  text-align: center;
+  color: #960000;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  z-index: 999;
+}
+
+.isiAcara .line {
+  border-bottom: 5px solid rgb(146, 0, 0);
+  margin-top: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0px -19px 28px 26px #8d83a5;
+}
+
+/* /// Gambar /// */
+.rangkaianacara {
+  background: url(../images/Alive8.0_6.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 8%;
+}
+
+.process-wrapper {
+  margin: auto;
+  max-width: 1080px;
+}
+
+#progress-bar-container {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  height: 100px;
+}
+
+#progress-bar-container ul {
+  padding: 0;
+  margin: 0;
+  padding-top: 15px;
+  z-index: 5;
+  position: absolute;
+  width: 100%;
+  margin-top: -40px;
+}
+
+#progress-bar-container li:before {
+  content: " ";
+  display: block;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 2px rgb(170, 170, 170);
+  transition: all ease 0.3s;
+}
+
+#progress-bar-container li.active:before,
+#progress-bar-container li:hover:before {
+  border: solid 2px #fff;
+
+  background: linear-gradient(to right, #e91e63 0%, #fff 100%);
+}
+
+#progress-bar-container li {
+  list-style: none;
+  float: left;
+  width: 25%;
+  text-align: center;
+  color: rgb(201, 95, 42);
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all ease 0.2s;
+  vertical-align: bottom;
+  height: 60px;
+  position: relative;
+  font-size: 12px;
+}
+
+#progress-bar-container li .step-inner {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+#progress-bar-container li.active,
+#progress-bar-container li:hover {
+  color: rgb(255, 255, 255);
+}
+
+#progress-bar-container li:after {
+  content: " ";
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #777;
+  margin: auto;
+  border: solid 7px #fff;
+  border-radius: 50%;
+  margin-top: 40px;
+  box-shadow: 0 2px 13px -1px rgba(0, 0, 0, 0.3);
+  transition: all ease 0.2s;
+}
+
+#progress-bar-container li:hover:after {
+  background: #555;
+}
+
+#progress-bar-container li.active:after {
+  background: #932020;
+}
+
+#progress-bar-container #line {
+  width: 78%;
+  margin-top: -10px;
+  background: #eee;
+  height: 10px;
+  position: absolute;
+  left: 10%;
+  top: 57px;
+  z-index: 1;
+  border-radius: 50px;
+  transition: all ease 0.9s;
+}
+
+#progress-bar-container #line-progress {
+  content: " ";
+  width: 3%;
+  height: 100%;
+  background: #207893;
+  background: linear-gradient(to right, #207893 0%, #2ea3b7 100%);
+  position: absolute;
+  z-index: 2;
+  border-radius: 50px;
+  transition: all ease 0.9s;
+}
+
+#progress-content-section {
+  width: 90%;
+  margin: auto;
+  background: #f3f3f3;
+  border-radius: 4px;
+}
+
+#progress-content-section a {
+  color: blue;
+}
+
+#progress-content-section .section-content {
+  padding: 30px 40px;
+  text-align: center;
+}
+
+#progress-content-section .section-content h2 {
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+#progress-content-section .section-content p {
+  font-size: 16px;
+  line-height: 1.8em;
+  color: #777;
+  text-align: left;
+}
+
+#progress-content-section .section-content {
+  display: none;
+  animation: FadeInUp 700ms ease 1;
+  animation-fill-mode: forwards;
+  transform: translateY(15px);
+  opacity: 0;
+}
+
+#progress-content-section .section-content.active {
+  display: block;
+}
+
+@keyframes FadeInUp {
+  0% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* Responsif */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .perkenalan1 {
+    background: url(../images/Alive8.0_7_768.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    background-position: 0 0;
+    padding-top: 150px;
+    padding-bottom: 70px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .perkenalan2 {
+    background-image: url(../images/Alive8.0_4_768.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    background-position: 0 0;
+    padding: 70px 0;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: -1%;
+  }
+
+  .isiAcara {
+    background: url(../images/Alive8.0_5_768.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    background-position: 0 0;
+    padding: 70px 0;
+    max-width: 100%;
+    height: auto;
+  }
+  .isiAcara h1 {
+    font-size: 75px;
+  }
+  .rangkaianacara {
+    background: url(../images/Alive8.0_6_768.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    background-position: 0 0;
+    padding: 50px 0;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 800px) {
+  #progress-bar-container li {
+    font-size: 9px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  /* .isiAcara {
+    padding-bottom: 10%;
+  } */
+  .isiAcara h1 {
+    font-size: 50px;
+    margin-bottom: 5px;
+  }
+  #sponsor-and-maps .titlepage{
+    padding-top: 30px;
+  }
+  .sponsor-and-maps {
+    background: #042431;
+    margin-top: -1px;
+    padding-bottom: 90px;
+    padding: 0;
+  }
+
+  .perkenalan1 {
+    background: url(../images/Alive8.0_7_576.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    background-position: 0 0;
+    padding: 90px 0;
+    max-width: 100%;
+    height: auto;
+  }
+  .perkenalan2 {
+    background-image: url(../images/Alive8.0_4_576.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    background-position: 0 0;
+    padding: 90px 0;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .isiAcara .line {
+    border-bottom: 4px solid rgb(146, 0, 0);
+    margin-top: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0px -19px 28px 26px #da9a87;
+  }
+  .isiAcara {
+    background: url(../images/Alive8.0_5_576.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    background-position: 0 0;
+    padding: 90px 0;
+    max-width: 100%;
+    height: auto;
+  }
+  .rangkaianacara {
+    background: url(../images/Alive8.0_6_576.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    background-position: 0 0;
+    padding: 50px 0;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #progress-bar-container li {
+    font-size: 9px;
+  }
+  .isiAcara img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .perkenalan1 .titlepage {
+    padding: 20px 20px 0px 20px;
+  }
+
+  .perkenalan2 .titlepage {
+    padding: 20px 20px 0px 20px;
+  }
+
+  .sponsor-and-maps .figur_sponsor {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .isiAcara h1 {
+    font-size: 40px;
+    line-height: 57px;
+    text-align: center;
+    color: #960000;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .isiAcara .line {
+    border-bottom: 3px solid rgb(146, 0, 0);
+    margin-top: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0px -19px 28px 26px #da9a87;
+  }
+  #progress-bar-container li {
+    font-size: 8px;
+  }
+  .isiAcara img {
+    max-width: 25%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .perkenalan1 {
+    background: url(../images/Alive8.0_7_390.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    background-position: 0 0;
+    padding: 90px 0 !important;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .perkenalan2 {
+    background: url(../images/Alive8.0_4_390.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    background-position: 0 0;
+    padding: 90px 0;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .isiAcara {
+    background: url(../images/Alive8.0_5_390.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    background-position: 0 0;
+    padding: 90px 0;
+    max-width: 100%;
+    height: auto;
+  }
+  .rangkaianacara {
+    background: url(../images/Alive8.0_6_390.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    background-position: 0 0;
+    padding: 50px 0;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .sponsor-and-maps .figur_sponsor {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .discovery .img-discovery,
+  .strategy .img-strategy {
+    width: 75%;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .sponsor-and-maps {
+    background: #042431;
+    margin-top: -1px;
+    padding-bottom: 90px;
+    padding:0;
+  } 
+  #sponsor-and-maps .titlepage{
+    padding-top: 90px;
+  }
+}
