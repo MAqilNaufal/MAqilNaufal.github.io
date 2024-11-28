@@ -4,34 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muhamad Aqil Naufal Portfolio</title>
-    <link rel="icon" type="image/png" href="img/profile.jpg" />
-    <!-- Bootstrap CSS -->
+    <link rel="icon" href="img/profile.jpg" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="style.css" />
-    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css"
-    />
   </head>
 
   <body>
-    <!-- Navbar -->
-    <nav
-      id="navbar"
-      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
-    >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <a class="navbar-brand" href="#">
-        <img src="img/profile.jpg" alt="Logo" class="mr-2" height="30" />
-        Muhamad Aqil Naufal
+        <img src="img/profile.jpg" alt="Logo" height="30" /> Muhamad Aqil Naufal
       </a>
       <button
         class="navbar-toggler"
@@ -62,17 +50,13 @@
             id="dark-mode-toggle"
             class="dark-mode-toggle"
           />
-          <label for="dark-mode-toggle" class="dark-mode-label"> </label>
+          <label for="dark-mode-toggle" class="dark-mode-label"></label>
         </div>
       </div>
     </nav>
 
-    <!-- Add space at the top of the page -->
-    <!-- <div class="top-space"></div> -->
-
-    <!-- Hero and About Section -->
-    <section id="hero-about" class="py-5">
-      <div class="container text-center">
+    <section id="hero-about" class="py-5 text-center">
+      <div class="container">
         <div class="row">
           <div class="col-lg-6">
             <img
@@ -85,23 +69,11 @@
           </div>
           <div class="col-lg-6">
             <h2>Hi, I'm Muhamad Aqil Naufal</h2>
-            <p class="text-justify">
-              Hello, let me introduce myself. I am Muhamad Aqil Naufal, a senior student in the 7th semester majoring in Information Systems at Universitas Multimedia Nusantara. Currently, I am nearing the completion of my college studies, and I have developed a strong interest in the fields of data science, website development, and UI/UX design. I am enthusiastic about delving deeper into the world of information technology and aspire to contribute to creating innovative solutions for real-world challenges through my knowledge in these three areas.
-            </p>
-            <!-- <p>
-              I'm proficient in HTML, CSS, and JavaScript, and I'm constantly
-              keeping up with the latest trends and technologies in the frontend
-              development world. I have a keen eye for design and enjoy bringing
-              creative concepts to life through clean and elegant code.
-            </p>
             <p>
-              In addition to my technical skills, I value effective
-              communication and collaboration. I believe that building strong
-              relationships with clients and team members is key to delivering
-              successful projects. I'm always excited to take on new challenges
-              and contribute my expertise to help businesses achieve their
-              goals.
-            </p> -->
+              Hello, I am a senior student majoring in Information Systems at
+              Universitas Multimedia Nusantara, with interests in data science,
+              website development, and UI/UX design.
+            </p>
             <div class="social-buttons">
               <a href="mailto:naulynaufal@gmail.com" class="btn btn-primary"
                 ><i class="fas fa-envelope"></i> Email</a
@@ -118,380 +90,295 @@
                 class="btn btn-primary"
                 ><i class="fab fa-instagram"></i> Instagram</a
               >
-              <!--
-              <a
-                href="https://wa.me/1234567890"
-                target="_blank"
-                class="btn btn-primary"
-                ><i class="fab fa-whatsapp"></i> WhatsApp</a
-              >
-              -->
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="py-5">
       <div class="container">
         <h2 class="text-center mb-5">Projects</h2>
-        <div class="project-wrapper">
-          <!-- Data Analytics Projects -->
-          <h3>Data Analytics</h3>
-          <div class="row">
-            <div class="col-lg-12 mb-4">
-              <div class="card">
-                <div
-                  class="tableauPlaceholder"
-                  id="viz1689725173908"
-                  style="position: relative"
+        <h3>Data Analytics</h3>
+        <div class="row">
+          <div class="col-lg-12 mb-4">
+            <div class="card">
+              <div
+                class="tableauPlaceholder"
+                id="viz1689725173908"
+                style="position: relative"
+              >
+                <noscript
+                  ><a href="#"
+                    ><img
+                      alt="4A"
+                      src="https://public.tableau.com/static/images/5R/5RBK272K6/1_rss.png"
+                      style="border: none" /></a
+                ></noscript>
+                <object class="tableauViz" style="display: none">
+                  <param name="host_url" value="https://public.tableau.com/" />
+                  <param name="embed_code_version" value="3" />
+                  <param name="path" value="shared/5RBK272K6" />
+                  <param name="toolbar" value="yes" />
+                  <param
+                    name="static_image"
+                    value="https://public.tableau.com/static/images/5R/5RBK272K6/1.png"
+                  />
+                  <param name="animate_transition" value="yes" />
+                  <param name="display_static_image" value="yes" />
+                  <param name="display_spinner" value="yes" />
+                  <param name="display_overlay" value="yes" />
+                  <param name="display_count" value="yes" />
+                  <param name="language" value="en-US" />
+                  <param name="filter" value="publish=yes" />
+                </object>
+              </div>
+              <script type="text/javascript">
+                var divElement = document.getElementById("viz1689725173908");
+                var vizElement = divElement.getElementsByTagName("object")[0];
+                vizElement.style.width = "100%";
+                vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
+                var scriptElement = document.createElement("script");
+                scriptElement.src =
+                  "https://public.tableau.com/javascripts/api/viz_v1.js";
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+              </script>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Data Visualization of FIFA 19-21 Player Game Statistics
+                </h5>
+                <p class="card-text text-justify">
+                  This project analyzes FIFA 19-21 player data through
+                  filtering, visualizing with Tableau, and providing insights
+                  from various perspectives.
+                </p>
+                <a
+                  href="https://drive.google.com/file/d/1b8lvejrsmBkiggX2bHnEuyMPdHzTv02P/view"
+                  target="_blank"
+                  class="btn btn-secondary"
+                  >Open PDF File</a
                 >
-                  <noscript
-                    ><a href="#"
-                      ><img
-                        alt="4A "
-                        src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;5R&#47;5RBK272K6&#47;1_rss.png"
-                        style="border: none" /></a></noscript
-                  ><object class="tableauViz" style="display: none">
-                    <param
-                      name="host_url"
-                      value="https%3A%2F%2Fpublic.tableau.com%2F"
-                    />
-                    <param name="embed_code_version" value="3" />
-                    <param name="path" value="shared&#47;5RBK272K6" />
-                    <param name="toolbar" value="yes" />
-                    <param
-                      name="static_image"
-                      value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;5R&#47;5RBK272K6&#47;1.png"
-                    />
-                    <param name="animate_transition" value="yes" />
-                    <param name="display_static_image" value="yes" />
-                    <param name="display_spinner" value="yes" />
-                    <param name="display_overlay" value="yes" />
-                    <param name="display_count" value="yes" />
-                    <param name="language" value="en-US" />
-                    <param name="filter" value="publish=yes" />
-                  </object>
-                </div>
-                <script type="text/javascript">
-                  var divElement = document.getElementById("viz1689725173908");
-                  var vizElement = divElement.getElementsByTagName("object")[0];
-                  vizElement.style.width = "100%";
-                  vizElement.style.height =
-                    divElement.offsetWidth * 0.75 + "px";
-                  var scriptElement = document.createElement("script");
-                  scriptElement.src =
-                    "https://public.tableau.com/javascripts/api/viz_v1.js";
-                  vizElement.parentNode.insertBefore(scriptElement, vizElement);
-                </script>
-                <!-- <img
-                  src="fifa19.png"
-                  alt="Spotlighted Data Project"
-                  class="card-img-top"
-                /> -->
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Data Visualization of FIFA 19-21 Player Game Statistics
-                  </h5>
-                  <p class="card-text text-justify">
-                    This project involves the analysis of FIFA 19-21 player data
-                    through key steps, including filtering raw data in CSV
-                    format, visualizing it using Tableau software into a story
-                    consisting of three dashboards and nine sheets, and
-                    providing insights from economic, equity, and player rating
-                    perspectives. This analysis provides a deep understanding of
-                    FIFA player data and its implications in the game.
-                  </p>
-                  <!-- <a href="#" class="btn btn-primary">View Details</a> -->
-                  <a
-                    href="https://drive.google.com/file/d/1b8lvejrsmBkiggX2bHnEuyMPdHzTv02P/view"
-                    target="_blank"
-                    class="btn btn-secondary"
-                    >Open PDF File</a
-                  >
-                  <a
-                    href="https://public.tableau.com/shared/5RBK272K6?:display_count=n&:origin=viz_share_link"
-                    target="_blank"
-                    class="btn btn-secondary"
-                    >Open in Tableau</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 mb-4">
-              <div class="card">
-                <img
-                  src="img/pokemon.png"
-                  alt="Data Project 1"
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    PokémonGO K-Means and Linear Regression
-                  </h5>
-                  <p class="card-text text-justify">
-                    In this project, I filter a dataset obtained from Kaggle by
-                    removing null and missing values. I use the R language to
-                    compare the K-Means algorithm (Elbow, Silhouette, and Gap
-                    statistics) and Linear Regression (Cook's distance, Normal
-                    Q-Q plot, Scale location plot, Residuals vs leverage plot,
-                    and Distance vs leverage plot). The research output includes
-                    word reports, raw R files, and processed CSV data files.
-                  </p>
-                  <a
-                    href="D7_MuhamadAqilNaufal_51213.html"
-                    target="_blank"
-                    class="btn btn-primary"
-                    >View Details</a
-                  >
-                  <a
-                    href="https://1drv.ms/w/s!Ak6hAQeryzcVnEsbeN8S5ci4iIBz?e=GV6lqq"
-                    target="_blank"
-                    class="btn btn-secondary"
-                    >Documentation</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-              <div class="card">
-                <img
-                  src="img/videoconference.png"
-                  alt="Data Project 2"
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Effectiveness of Video Conference in Online Learning
-                  </h5>
-                  <p class="card-text text-justify">
-                    "Examining the "Effectiveness of Video Conferencing on
-                    Online Learning" during COVID-19. Findings show varied
-                    impacts on students - some experience positive outcomes,
-                    while others face fatigue and discomfort. Technical issues
-                    like unstable internet connections also posed challenges.
-                    Valuable insights provided for institutions to enhance video
-                    conferencing in online learning."
-                  </p>
-                  <a
-                    href="D6_MuhamadAqilNaufal_00000051213.html"
-                    target="_blank"
-                    class="btn btn-primary"
-                    >View Details</a
-                  >
-                  <a
-                    href="https://1drv.ms/w/s!Ak6hAQeryzcVnBqKsi290s9NIg2S?e=lyHgRc"
-                    target="_blank"
-                    class="btn btn-secondary"
-                    >Documentation</a
-                  >
-                </div>
+                <a
+                  href="https://public.tableau.com/shared/5RBK272K6?:display_count=n&:origin=viz_share_link"
+                  target="_blank"
+                  class="btn btn-secondary"
+                  >Open in Tableau</a
+                >
               </div>
             </div>
           </div>
 
-          <!-- Website Development Projects -->
-          <h3>Website Development</h3>
-          <div class="row">
-            <div class="col-lg-12 mb-4">
-              <div class="card">
-                <img
-                  src="img/alive8.0.png"
-                  alt="Spotlighted Web Project"
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Alive 8.0 by UMN Medical Center</h5>
-                  <p class="card-text text-justify">
-                    The "ALIVE 8.0" website project is an extensive and dynamic
-                    multi-page website designed to promote and provide
-                    comprehensive information about the annual event "ALIVE,"
-                    organized by UMN Medical Center. The event, taking place in
-                    2022, revolves around the theme "DIABETES EDUCATION,"
-                    focusing on raising awareness and delivering essential
-                    knowledge about diabetes, a condition that can affect people
-                    of all ages.
-                  </p>
-                  <a
-                    href="ALIVE/index.html"
-                    target="_blank"
-                    class="btn btn-primary"
-                    >Demo</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-              <div class="card">
-                <img
-                  src="img/efata.png"
-                  alt="Web Project 1"
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Efata Ultrans Tour</h5>
-                  <p class="card-text text-justify">
-                    The "Efata Ultrans Tour" web project is a feature-rich and
-                    user-friendly website dedicated to providing comprehensive
-                    travel and tour services to its customers. The platform
-                    serves as a one-stop destination for travelers seeking
-                    memorable and hassle-free travel experiences across various
-                    destinations.
-                  </p>
-                  <a
-                    href="https://efata.webflow.io/"
-                    target="_blank"
-                    class="btn btn-primary"
-                    >View Site</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-              <div class="card">
-                <img
-                  src="img/okeprend.png"
-                  alt="Web Project 2"
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Okeprend</h5>
-                  <p class="card-text text-justify">
-                    OkePrend is a leading printing service based in Tangerang,
-                    renowned for its innovative and high-quality solutions.
-                    Catering to a diverse clientele, including individuals,
-                    businesses, and organizations, OkePrend delivers exceptional
-                    printing services for both online and offline requirements.
-                  </p>
-                  <a href="#" class="btn btn-primary">View Details</a>
-                </div>
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <img
+                src="img/pokemon.png"
+                alt="Data Project 1"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  PokémonGO K-Means and Linear Regression
+                </h5>
+                <p class="card-text text-justify">
+                  This project filters a Kaggle dataset using R to compare
+                  K-Means and Linear Regression algorithms, producing
+                  comprehensive reports and data files.
+                </p>
+                <a
+                  href="D7_MuhamadAqilNaufal_51213.html"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >View Details</a
+                >
+                <a
+                  href="https://1drv.ms/w/s!Ak6hAQeryzcVnEsbeN8S5ci4iIBz?e=GV6lqq"
+                  target="_blank"
+                  class="btn btn-secondary"
+                  >Documentation</a
+                >
               </div>
             </div>
           </div>
 
-          <!-- UI/UX Projects -->
-          <h3>UI/UX</h3>
-          <div class="row">
-            <div class="col-lg-12 mb-4">
-              <div class="card">
-                <img
-                  src="img/cruzerverse.png"
-                  alt="Spotlighted UI Project"
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Cruzeverse a Metaverse Concept</h5>
-                  <p class="card-text text-justify">
-                    Cruzerverse is a groundbreaking UI/UX design collaboration
-                    with Defath JR, introducing an integrated Virtual Reality
-                    (VR) experience. This innovative mobile app offers users a
-                    seamless interface and immersive VR capabilities, allowing
-                    them to explore virtual environments, engage in interactive
-                    storytelling, and interact with lifelike virtual objects.
-                    With its sleek design and intuitive navigation, Cruzerverse
-                    sets a new standard for VR interaction, revolutionizing the
-                    way users engage with virtual reality.
-                  </p>
-                  <a
-                    href="https://dribbble.com/shots/17163764-Cruzeverse-a-Metaverse-Concept"
-                    target="_blank"
-                    class="btn btn-primary"
-                    >View Details</a
-                  >
-                  <a
-                    href="https://xd.adobe.com/view/d2a1fc65-a9fb-4195-b819-24699d6d6ccb-87f2/?fullscreen"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn btn-secondary"
-                    >Demo</a
-                  >
-                </div>
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <img
+                src="img/videoconference.png"
+                alt="Data Project 2"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Effectiveness of Video Conference in Online Learning
+                </h5>
+                <p class="card-text text-justify">
+                  This project examines the impact of video conferencing on
+                  online learning during COVID-19, highlighting both positive
+                  outcomes and challenges faced by students.
+                </p>
+                <a
+                  href="D6_MuhamadAqilNaufal_00000051213.html"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >View Details</a
+                >
+                <a
+                  href="https://1drv.ms/w/s!Ak6hAQeryzcVnBqKsi290s9NIg2S?e=lyHgRc"
+                  target="_blank"
+                  class="btn btn-secondary"
+                  >Documentation</a
+                >
               </div>
             </div>
-            <div class="col-lg-6 mb-4">
-              <div class="card">
-                <!-- <iframe
-                  width="428"
-                  height="926"
-                  src="https://xd.adobe.com/embed/a0b2accf-ca64-4567-8765-7084726938ea-f5e1/?fullscreen&hints=off"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe> -->
-                <img
-                  src="img/bugar.png"
-                  alt="UI Project 1"
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Bugar Vaccine Application System Design
-                  </h5>
-                  <p class="card-text text-justify">
-                    Bugar Vaccine App is a comprehensive application designed to
-                    facilitate and accelerate the vaccination process in
-                    Indonesia. With a range of useful features, the app aims to
-                    enhance the vaccination rate across the country. Users can
-                    access various features including consultation services,
-                    activity monitoring, schedule checking, and information on
-                    vaccine types, locations, and availability.
-                  </p>
-                  <a
-                    href="https://dribbble.com/shots/17147276-Bugar-Vaccine-Apps"
-                    target="_blank"
-                    class="btn btn-primary"
-                    >View Details</a
-                  >
-                  <a
-                    href="https://www.youtube.com/watch?v=hlDK64fLwXU"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn btn-secondary"
-                    >Pitch Deck</a
-                  >
-                  <a
-                    href="https://bit.ly/BUGARADOBE"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn btn-secondary"
-                    >Demo</a
-                  >
-                  <a
-                    href="https://1drv.ms/b/s!Ak6hAQeryzcVm3dzR6fr9hMxwak6?e=05DhYi"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn btn-secondary"
-                    >Documentation</a
-                  >
-                </div>
+          </div>
+        </div>
+
+        <h3>Website Development</h3>
+        <div class="row">
+          <div class="col-lg-12 mb-4">
+            <div class="card">
+              <img
+                src="img/alive8.0.png"
+                alt="Spotlighted Web Project"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Alive 8.0 by UMN Medical Center</h5>
+                <p class="card-text text-justify">
+                  The "ALIVE 8.0" website project promotes the annual event
+                  "ALIVE," focusing on diabetes education and awareness.
+                </p>
+                <a
+                  href="ALIVE/index.html"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Demo</a
+                >
               </div>
             </div>
-            <div class="col-lg-6 mb-4">
-              <div class="card">
-                <img
-                  src="img/taut.png"
-                  alt="UI Project 2"
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">TAUT (Transportasi Umum Tangerang)</h5>
-                  <p class="card-text text-justify">
-                    TAUT (Transportation Application for Urban Transformation)
-                    is a mobile application that provides traffic information,
-                    routes, and travel times to enhance mobility and public
-                    transportation in Tangerang, Indonesia. The app focuses on
-                    accessibility and community features while offering
-                    incentive programs to encourage the use of sustainable
-                    transportation.
-                  </p>
-                  <a
-                    href="https://dribbble.com/shots/22030826-TAUT-Transportasi-Umum-Tangerang"
-                    target="_blank"
-                    class="btn btn-primary"
-                    >View Details</a
-                  >
-                </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <img
+                src="img/efata.png"
+                alt="Web Project 1"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Efata Ultrans Tour</h5>
+                <p class="card-text text-justify">
+                  A user-friendly website providing comprehensive travel and
+                  tour services for memorable experiences.
+                </p>
+                <a
+                  href="https://efata.webflow.io/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >View Site</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <img
+                src="img/okeprend.png"
+                alt="Web Project 2"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Okeprend</h5>
+                <p class="card-text text-justify">
+                  OkePrend offers innovative printing services for individuals
+                  and businesses, catering to diverse needs.
+                </p>
+                <a href="#" class="btn btn-primary">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3>UI/UX</h3>
+        <div class="row">
+          <div class="col-lg-12 mb-4">
+            <div class="card">
+              <img
+                src="img/cruzerverse.png"
+                alt="Spotlighted UI Project"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cruzeverse a Metaverse Concept</h5>
+                <p class="card-text text-justify">
+                  An innovative mobile app offering a seamless VR experience
+                  with interactive storytelling and lifelike objects.
+                </p>
+                <a
+                  href="https://dribbble.com/shots/17163764-Cruzeverse-a-Metaverse-Concept"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >View Details</a
+                >
+                <a
+                  href="https://xd.adobe.com/view/d2a1fc65-a9fb-4195-b819-24699d6d6ccb-87f2/?fullscreen"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                  >Demo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <img
+                src="img/bugar.png"
+                alt="UI Project 1"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Bugar Vaccine Application System Design
+                </h5>
+                <p class="card-text text-justify">
+                  A comprehensive app designed to facilitate the vaccination
+                  process in Indonesia with various useful features.
+                </p>
+                <a
+                  href="https://dribbble.com/shots/17147276-Bugar-Vaccine-Apps"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >View Details</a
+                >
+                <a
+                  href="https://www.youtube.com/watch?v=hlDK64fLwXU"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                  >Pitch Deck</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mb-4">
+            <div class="card">
+              <img src="img/taut.png" alt="UI Project 2" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">TAUT (Transportasi Umum Tangerang)</h5>
+                <p class="card-text text-justify">
+                  A mobile app providing traffic information and routes to
+                  enhance public transportation in Tangerang, Indonesia.
+                </p>
+                <a
+                  href="https://dribbble.com/shots/22030826-TAUT-Transportasi-Umum-Tangerang"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >View Details</a
+                >
               </div>
             </div>
           </div>
@@ -499,7 +386,6 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="py-5">
       <div class="container">
         <h2 class="text-center mb-5">Contact Me</h2>
@@ -559,7 +445,7 @@
             <a href="#" class="social-link"
               ><i class="fab fa-youtube"></i> MAqilNaufal</a
             >
-            <a href="mailto:youremail@example.com" class="social-link"
+            <a href="mailto:naulynaufal@gmail.com" class="social-link"
               ><i class="far fa-envelope"></i> naulynaufal@gmail.com</a
             >
           </div>
@@ -572,10 +458,8 @@
       </div>
     </footer>
 
-    <!-- JavaScript Files -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

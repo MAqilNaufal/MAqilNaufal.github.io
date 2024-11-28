@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Press Start 2P", cursive;
+        background-image: url("assets/img/Group 32.png"); /* Fixed the URL */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: white; /* Ensure text is visible on dark background */
+      }
+      .japanese-element {
+        margin-top: 20px;
+        font-size: 1.5rem;
+        color: #ff69b4;
+      }
+      footer {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="progress"
+        style="height: 5px; position: fixed; top: 0; left: 0; z-index: 1000"
+      >
+        <div
+          class="progress-bar bg-info"
+          id="progress-bar"
+          role="progressbar"
+          style="width: 0"
+        ></div>
+      </div>
+
+      <div id="root"></div>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 Muhamad Aqil Naufal. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script type="text/babel">
+      function App() {
+        return (
+          <div>
+            <section className="text-center my-5">
+              <h1 className="display-4">PORTFOLIO</h1>
+              <div className="japanese-element">ポートフォリオ</div>
+            </section>
+
+            <section className="my-5">
+              <div className="d-flex align-items-center">
+                <img
+                  src="/assets/img/profile.jpg"
+                  alt="Profile"
+                  className="rounded-circle border border-info"
+                  style={{ width: "150px", height: "150px" }}
+                />
+                <div className="ml-4">
+                  <h2 className="display-5">ABOUT ME</h2>
+                  <p>
+                    Hello, my name is Muhamad Aqil Naufal. I am a final grade
+                    student majoring in Information Systems. My passions are in
+                    the UX/UI design and front-end web and mobile app
+                    development. I love to explore new technology and creating
+                    captivating websites.
+                  </p>
+                  <div className="japanese-element">私について</div>
+                </div>
+              </div>
+            </section>
+
+            <section className="my-5">
+              <h2 className="display-5">MY WORK</h2>
+              {[
+                {
+                  title: "Taut",
+                  description:
+                    "Taut is a messaging application for teams. It helps teams communicate and collaborate efficiently. The app includes features like direct messaging, group chats, and file sharing.",
+                  imgSrc: "/assets/img/taut.png",
+                  japaneseTitle: "タウト",
+                },
+                {
+                  title: "Cruzerverse",
+                  description:
+                    "Cruzerverse is a social media platform that allows users to create and share content in a virtual world. Users can customize their avatars, explore different environments, and interact with others.",
+                  imgSrc: "/assets/img/cruzerverse.png",
+                  japaneseTitle: "クルーザーバース",
+                },
+                {
+                  title: "Bugar Vaccine Apps",
+                  description:
+                    "Bugar Vaccine Apps is an application that helps users keep track of their vaccination schedules. It provides reminders for upcoming vaccinations and stores vaccination records.",
+                  imgSrc: "/assets/img/bugar.png",
+                  japaneseTitle: "ブガー ワクチン アプリ",
+                },
+                {
+                  title: "UMN Library Logo Contest",
+                  description:
+                    "UMN Library is the library located at Universitas Multimedia Nusantara. In 2021, UMN Library held a logo design contest, and I was one of the participants. My design was selected as one of the finalists, and it was a great experience to compete with other talented designers.",
+                  imgSrc: "/assets/img/Library.png",
+                  japaneseTitle: "UMN 図書館 ロゴ コンテスト",
+                },
+              ].map((item) => (
+                <div
+                  className="d-flex align-items-center my-4"
+                  key={item.title}
+                >
+                  <img
+                    src={item.imgSrc}
+                    alt={item.title}
+                    className="border border-info"
+                    style={{ width: "200px", height: "auto" }}
+                  />
+                  <div className="ml-4">
+                    <h3>{item.title}</h3>
+                    <p>{item.description}</p>
+                    <div className="japanese-element">{item.japaneseTitle}</div>
+                  </div>
+                </div>
+              ))}
+            </section>
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

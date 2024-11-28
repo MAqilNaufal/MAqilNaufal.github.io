@@ -1,44 +1,64 @@
-/* CSS for dark mode */
+/* CSS for default light mode */
 body {
   background-color: #ffffff; /* Set default background color */
   color: #000000; /* Set default text color */
 }
 
-body.dark-mode {
-  background-color: #1f1f1f; /* Set dark mode background color */
-  color: #ffffff; /* Set dark mode text color */
+.navbar {
+  background-color: #343a40; /* Light navbar */
 }
 
-/* Additional dark mode styling for specific elements */
-.dark-mode .navbar {
-  background-color: #1f1f1f;
+.card {
+  background-color: #ffffff; /* Light card background */
+  color: #000000; /* Dark text */
+}
+
+.navbar .nav-link {
+  color: #ff0000; /* Default text color */
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:focus {
+  color: #ffffff; /* Active tab text color */
+}
+
+/* CSS for dark mode */
+body.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text */
+}
+
+.navbar.dark-mode {
+  background-color: #1f1f1f; /* Dark navbar */
+}
+
+.card.dark-mode {
+  background-color: #1e1e1e; /* Dark card background */
+  color: #ffffff; /* Light text */
 }
 
 .dark-mode .navbar .nav-link {
-  color: #ffffff;
+  color: #ffffff; /* Light text for nav links */
 }
 
 .dark-mode .project-wrapper .card {
-  background-color: #343a40;
-  color: #ffffff;
+  background-color: #343a40; /* Darker background for project cards */
+  color: #ffffff; /* Light text */
 }
 
-.dark-mode .project-wrapper .card-title {
-  color: #ffffff;
-}
-
+.dark-mode .project-wrapper .card-title,
 .dark-mode .project-wrapper .card-text {
-  color: #f8f9fa;
+  color: #ffffff; /* Light text for titles and texts */
 }
 
 .dark-mode .project-wrapper .btn-primary {
-  background-color: #ff0000;
-  border-color: #ff0000;
+  background-color: #ff0000; /* Button color */
+  border-color: #ff0000; /* Button border color */
 }
 
 .dark-mode .project-wrapper .btn-primary:hover {
-  background-color: #dc3545;
-  border-color: #dc3545;
+  background-color: #dc3545; /* Hover color */
+  border-color: #dc3545; /* Hover border color */
 }
 
 /* CSS for dark mode switch */
@@ -81,21 +101,11 @@ body.dark-mode {
 }
 
 .dark-mode-switch .dark-mode-toggle:checked + .dark-mode-label {
-  background-color: #343a40;
+  background-color: #343a40; /* Dark switch background */
 }
 
 .dark-mode-switch .dark-mode-toggle:checked + .dark-mode-label:before {
-  transform: translateX(16px);
-}
-
-/* CSS for navbar */
-.navbar .nav-link {
-  color: #ff0000; /* Replace with your desired text color */
-}
-
-.navbar .nav-link.active,
-.navbar .nav-link:focus {
-  color: #ffffff; /* Replace with your desired active tab text color */
+  transform: translateX(16px); /* Move switch knob */
 }
 
 /* CSS for top space */
@@ -165,65 +175,65 @@ body.dark-mode {
 .social-footer a {
   display: flex;
   align-items: center;
-  color: #1f1f1f;
+  color: #1f1f1f; /* Default link color */
   text-decoration: none;
   margin-bottom: 10px; /* Add bottom margin */
 }
 
 .social-footer a .icon {
-  margin-right: 10px;
+  margin-right: 10px; /* Space between icon and text */
 }
 
 .copy-text {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 20px; /* Space above copyright text */
 }
 
 /* Dark mode styling */
 .dark-mode .footer {
-  background-color: #343a40;
-  color: #ffffff;
+  background-color: #343a40; /* Dark footer background */
+  color: #ffffff; /* Light footer text */
 }
 
 .dark-mode .social-footer a {
-  color: #ffffff;
+  color: #ffffff; /* Light text for social links */
 }
 
 .dark-mode .copy-text {
-  color: #ffffff;
+  color: #ffffff; /* Light text for copyright */
 }
 
 /* CSS for screen sizes between 992px and 1199px */
 @media (min-width: 992px) and (max-width: 1199px) {
   #hero-about .col-lg-6 p {
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-right: 0px; /* Remove margin for medium screens */
+    margin-left: 0px; /* Remove margin for medium screens */
   }
 }
 
 /* CSS for screen sizes between 768px and 991px */
 @media (min-width: 768px) and (max-width: 991px) {
   #hero-about .col-lg-6 p {
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 100px; /* Adjust margin for medium screens */
+    margin-left: 100px; /* Adjust margin for medium screens */
   }
 }
 
 /* CSS to adjust the navbar position on smaller screens */
 @media (max-width: 767px) {
   #navbar {
-    position: fixed;
-    bottom: 0;
-    top: auto;
+    position: fixed; /* Fix navbar at the bottom */
+    bottom: 0; /* Position at the bottom */
+    top: auto; /* Reset top position */
   }
 
   .top-space {
-    display: none;
+    display: none; /* Hide top space on small screens */
   }
 
   #hero-about .col-lg-6 p {
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 50px; /* Adjust margin for small screens */
+    margin-left: 50px; /* Adjust margin for small screens */
   }
 
   .footer {
